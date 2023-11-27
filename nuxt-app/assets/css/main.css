@@ -3,6 +3,30 @@
 }
 
 .nav {
+    @media (min-width: 600px) {
+        position: fixed;
+    }
+}
+
+.nav-title {
+    @media (min-width: 600px) {
+        display: none;
+    }
+}
+
+.nav-menu {
+    background-color: #ffffff;
+    width: 100%;
+    display: none;
+    @media (min-width: 600px) {
+        display: block;
+        background-color: none;
+        width: 30%;
+    }
+
+    &.visible {
+        display: block;
+    }
 }
 
 .nav-logo {
@@ -15,4 +39,9 @@
 
 .nav-list {
     list-style-type: none;
+}
+
+.main-video {
+    width: 800px;
+    height: 600px;
 }
